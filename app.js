@@ -9,10 +9,8 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
 .addAnswer('🙌 Hola bienvenido a este *Chatbot*',
     {
         delay: 1000,
-    },
-    async (ctx, context) => {
-        console.log(ctx.body)
-        await context.flowDynamics(ctx, context)
+        //attach pdf file
+        media: 'carta_andres.pdf',
     }
 )
 
