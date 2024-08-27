@@ -1,12 +1,12 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573013601152@s.whatsapp.net',
+    remoteJid: '573117858828@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0AA378A5730475D831E',
+    id: '3EB047D594FF8C1C0E5CFF',
     participant: undefined
   },
-  messageTimestamp: 1722565054,
-  pushName: 'Andrés Gutierrez',
+  messageTimestamp: 1724799271,
+  pushName: 'Santiago Salazar',
   broadcast: false,
   message: Message {
     conversation: 'hola',
@@ -16,11 +16,11 @@
     }
   },
   body: 'hola',
-  from: '573013601152'
+  from: '573117858828'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_8a30baab-5b1f-428f-8af9-e5e45cbef792',
-  keyword: 'key_44c3dd39-0c13-4765-8bc5-118c9fd97f14',
+  ref: 'ans_9db701ec-3f49-446b-8656-61b57de4d9d0',
+  keyword: 'key_60757d97-ad76-4c4b-8432-5c30c3ceba88',
   answer: 'Hola bienvenido a este *Chatbot*, espero te encuentres muy bien🤗.',
   options: {
     media: null,
@@ -34,98 +34,15 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '08f18adaf603326e406c771d41181b5f'
+  refSerialize: '320da3869d842a1cc7bffeb9ce1334aa'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_57fd9e3f-1b68-4ecc-a6ff-748319b9de92',
-  keyword: 'ans_8a30baab-5b1f-428f-8af9-e5e45cbef792',
+  ref: 'ans_3a4ad569-aca6-41ca-b9e8-fe9d037da255',
+  keyword: 'ans_9db701ec-3f49-446b-8656-61b57de4d9d0',
   answer: 'Elige la unidad a la que perteneces:\n*1.* MAJAGUA',
   options: {
     media: null,
     buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '5c1f5c80e2f116c31856442381b41ca3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573013601152@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0E9B75770FC71EDF79C',
-    participant: undefined
-  },
-  messageTimestamp: 1722565056,
-  pushName: 'Andrés Gutierrez',
-  broadcast: false,
-  message: Message {
-    conversation: '1',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '1',
-  from: '573013601152'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_a5da4beb-1c38-4a08-be02-f4ce4baced46',
-  keyword: 'key_d1eeaef8-1e8c-4060-8061-016f3064c229',
-  answer: '*Bienvenido a la MAJAGUA*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'e19c509404fca8776618ce9aca86c5bd'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_37afb5bb-8859-4fa1-8dfb-a1347e9cf680',
-  keyword: 'ans_a5da4beb-1c38-4a08-be02-f4ce4baced46',
-  answer: '¿Qué Deseas hacer?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '909d8ad9980334b271d9f51ae453d44a'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fdda1b53-5208-4e42-81e4-5ba819abefb4',
-  keyword: 'ans_37afb5bb-8859-4fa1-8dfb-a1347e9cf680',
-  answer: '*1.* Estados de cuenta\n' +
-    '*2.* Solicitud de factura\n' +
-    '*3.* Reportar novedad de facturación\n' +
-    '*4.* Día de pago\n' +
-    '*5.* Soportes de meses anteriores\n' +
-    '*6.* Revisión estados de cuenta\n' +
-    '*7.* Enviar soporte de pago\n' +
-    '*8.* Medios de Pago de administración\n' +
-    '*9.* Volver al menú principal\n' +
-    '*0.* Terminar la conversación',
-  options: {
-    media: null,
-    buttons: [],
     capture: true,
     child: null,
     delay: 0,
@@ -135,17 +52,17 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '28c708eb6070ef2bd3acc2f3cc636e70'
+  refSerialize: '8f11494a430c56d656d7cf5cc2c0bbb5'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573013601152@s.whatsapp.net',
+    remoteJid: '573117858828@s.whatsapp.net',
     fromMe: false,
-    id: '3EB04D7F90C19BCB56240A',
+    id: '3EB0347342280446AD7183',
     participant: undefined
   },
-  messageTimestamp: 1722565058,
-  pushName: 'Andrés Gutierrez',
+  messageTimestamp: 1724799274,
+  pushName: 'Santiago Salazar',
   broadcast: false,
   message: Message {
     conversation: '1',
@@ -155,68 +72,145 @@
     }
   },
   body: '1',
-  from: '573013601152'
+  from: '573117858828'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_a5da4beb-1c38-4a08-be02-f4ce4baced46',
-  keyword: 'key_d1eeaef8-1e8c-4060-8061-016f3064c229',
-  answer: '*Bienvenido a la MAJAGUA*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06DB2F867DBF1CC6C0B',
+    participant: undefined
   },
-  refSerialize: 'e19c509404fca8776618ce9aca86c5bd'
+  messageTimestamp: 1724799278,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '9',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '9',
+  from: '573117858828'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_37afb5bb-8859-4fa1-8dfb-a1347e9cf680',
-  keyword: 'ans_a5da4beb-1c38-4a08-be02-f4ce4baced46',
-  answer: '¿Qué Deseas hacer?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB05D16563D74D6D9C41C',
+    participant: undefined
   },
-  refSerialize: '909d8ad9980334b271d9f51ae453d44a'
+  messageTimestamp: 1724799281,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573117858828'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fdda1b53-5208-4e42-81e4-5ba819abefb4',
-  keyword: 'ans_37afb5bb-8859-4fa1-8dfb-a1347e9cf680',
-  answer: '*1.* Estados de cuenta\n' +
-    '*2.* Solicitud de factura\n' +
-    '*3.* Reportar novedad de facturación\n' +
-    '*4.* Día de pago\n' +
-    '*5.* Soportes de meses anteriores\n' +
-    '*6.* Revisión estados de cuenta\n' +
-    '*7.* Enviar soporte de pago\n' +
-    '*8.* Medios de Pago de administración\n' +
-    '*9.* Volver al menú principal\n' +
-    '*0.* Terminar la conversación',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0CE7DEE077FBE3AD241',
+    participant: undefined
   },
-  refSerialize: '28c708eb6070ef2bd3acc2f3cc636e70'
+  messageTimestamp: 1724799283,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573117858828'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB02CBD9BA8AFD202D44D',
+    participant: undefined
+  },
+  messageTimestamp: 1724799289,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '9',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '9',
+  from: '573117858828'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB02346A2A436FF33B2F7',
+    participant: undefined
+  },
+  messageTimestamp: 1724799301,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573117858828'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0114D152A2B29D767C1',
+    participant: undefined
+  },
+  messageTimestamp: 1724799304,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573117858828'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573117858828@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06CA1255D6E9EFB5718',
+    participant: undefined
+  },
+  messageTimestamp: 1724799307,
+  pushName: 'Santiago Salazar',
+  broadcast: false,
+  message: Message {
+    conversation: '0',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '0',
+  from: '573117858828'
 }
