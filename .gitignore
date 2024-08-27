@@ -1,2 +1,7 @@
 node_modules
 .env
+package-lock.json
+*.class.log
+*.log
+bot_sessions
+*.qr.png

@@ -1,23 +1,41 @@
 require('dotenv').config()
 
 const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@bot-whatsapp/bot')
-
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 const { delay } = require('@whiskeysockets/baileys')
+const { capture } = require('paypal-rest-sdk')
 
-// Variable para mantener el estado del flujo
-let currentFlow = 'welcome';
+const flowWelcome = addKeyword(EVENTS.WELCOME)
+    .addAnswer('Hola bienvenido a este *Chatbot*, espero te encuentres muy bien🤗.')
+    .addAnswer([
+        'Elige la unidad a la que perteneces:',
+        '*1.* MAJAGUA'
+    ], { capture: true }, async (ctx, { gotoFlow }) => {
+        const option = ctx.body.trim();
+        if (option === '1' || option === 'MAJAGUA') {
+            return gotoFlow(flowMajagua);
+        } else {
+            await flowDynamic('Opción no válida. Por favor, elige una opción válida.');
+            return gotoFlow(flowWelcome);
+        }
+    });
 
-const flowWelcome = addKeyword(EVENTS.WELCOME).addAnswer(
-    'Hola bienvenido a este *Chatbot*, espero te encuentres muy bien🤗.')
-    .addAnswer(
-        [
-            'Elige la unidad a la que perteneces:',
-            '*1.* MAJAGUA'
-        ],
-    )
+const flowRestartFinish = addKeyword(['0', '0.', '9', '9.'])
+    .addAnswer('¿Necesitas ayuda con algo más? Escribe "9" para volver al menú principal o "0" para terminar.',  { capture: true }, async (ctx, { endFlow, gotoFlow, flowDynamic, fallBack }) => {
+        const option = ctx.body.trim();
+        if (option == '0') {
+            await flowDynamic('Gracias por usar este bot, ¡Hasta pronto!');
+            return endFlow(); // Termina la conversación
+        } else if (option == '9') {
+            await flowDynamic('Volviendo al menú principal...');
+            return gotoFlow(flowWelcome); // Vuelve al menú principal
+        } else {
+            await flowDynamic('Opción no válida. Por favor, elige una opción válida.');
+            return fallBack(); // Vuelve a presentar las opciones
+        }
+    })
 
 const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
     .addAnswer('*Bienvenido a la MAJAGUA*')
@@ -61,26 +79,22 @@ const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
                 await flowDynamic('Medios de Pago de administración: [link]');
                 break;
             case '9':
-                currentFlow = 'welcome'; // Cambia el estado del flujo a 'welcome'
-                await flowDynamic('Volviendo al menú principal...');
-                return flowWelcome; // Vuelve al menú principal
+                return gotoFlow(flowWelcome); // Redirige al flujo de reinicio
             case '0':
                 await flowDynamic('Gracias por usar nuestro servicio. ¡Hasta luego!');
-                return;
+                return endFlow(); // Termina la conversación
             default:
                 await flowDynamic('Opción no válida. Por favor, elige una opción válida.');
                 return fallBack(); // Vuelve a presentar las opciones
         }
-
-        // Después de cada acción, pregunta si el usuario necesita algo más
-        await flowDynamic('¿Necesitas ayuda con algo más? Escribe "9" para volver al menú principal o "0" para terminar.');
-        return gotoFlow(flowMajagua);
-        // return endFlow({body: '¿Necesitas ayuda con algo más? Escribe "9" para volver al menú principal o "0" para terminar.'});
-    })
+        // Después de cada acción, redirige al flujo de reinicio
+        return gotoFlow(flowRestartFinish);
+    });
 
 const flows = [
     flowWelcome,
-    flowMajagua
+    flowMajagua,
+    flowRestartFinish
 ]
 
 const main = async () => {
