@@ -12,7 +12,7 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
     .addAnswer([
         'Elige la unidad a la que perteneces:',
         '*1.* MAJAGUA'
-    ], { capture: true }, async (ctx, { gotoFlow }) => {
+    ], { capture: true }, async (ctx, { gotoFlow, flowDynamic }) => {
         const option = ctx.body.trim();
         if (option === '1' || option === 'MAJAGUA') {
             return gotoFlow(flowMajagua);
@@ -23,17 +23,19 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
     });
 
 const flowRestartFinish = addKeyword(['0', '0.', '9', '9.'])
-    .addAnswer('¿Necesitas ayuda con algo más? Escribe "9" para volver al menú principal o "0" para terminar.',  { capture: true }, async (ctx, { endFlow, gotoFlow, flowDynamic, fallBack }) => {
+    .addAnswer('¿Necesitas ayuda con algo más? Escribe "9" para volver al menú principal o "0" para terminar.', { capture: true }, async (ctx, { endFlow, gotoFlow, flowDynamic, fallBack }) => {
         const option = ctx.body.trim();
-        if (option == '0') {
-            await flowDynamic('Gracias por usar este bot, ¡Hasta pronto!');
-            return endFlow(); // Termina la conversación
-        } else if (option == '9') {
-            await flowDynamic('Volviendo al menú principal...');
-            return gotoFlow(flowWelcome); // Vuelve al menú principal
-        } else {
-            await flowDynamic('Opción no válida. Por favor, elige una opción válida.');
-            return fallBack(); // Vuelve a presentar las opciones
+
+        switch (option) {
+            case '0':
+                await flowDynamic('Gracias por usar este bot, ¡Hasta pronto!');
+                return endFlow(); // Termina la conversación
+            case '9':
+                await flowDynamic('Volviendo al menú principal...');
+                return gotoFlow(flowWelcome); // Vuelve al menú principal
+            default:
+                await flowDynamic('Opción no válida. Por favor, elige una opción válida.');
+                return fallBack(); // Vuelve a presentar las opciones
         }
     })
 
@@ -44,12 +46,13 @@ const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
         '*1.* Estados de cuenta',
         '*2.* Solicitud de factura',
         '*3.* Reportar novedad de facturación',
-        '*4.* Día de pago',
+        '*4.* Soporte de pago',
         '*5.* Soportes de meses anteriores',
         '*6.* Revisión estados de cuenta',
         '*7.* Enviar soporte de pago',
         '*8.* Medios de Pago de administración',
-        '*9.* Volver al menú principal',
+        '*9.* Medios de Pago otros servicios',
+        '*15.* Volver al menú principal',
         '*0.* Terminar la conversación'
     ], { capture: true }, async (ctx, { flowDynamic, fallBack, endFlow, gotoFlow }) => {
         const option = ctx.body.trim();
@@ -61,24 +64,42 @@ const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
                 await flowDynamic('Acá puedes consultar tu solicitud de factura: https://www.phenlinea.info/');
                 break;
             case '3':
-                await flowDynamic('Acá puedes reportar novedad de facturación: https://form.jotform.com/urbanizacionlisboaph/reservasalonsocial');
+                //https://form.jotform.com/urbanizacionlisboaph/reservasalonsocial
+                await flowDynamic('Acá puedes reportar novedad de facturación: https://forms.gle/aGgFjHptEMPYWcGS9');
                 break;
             case '4':
-                await flowDynamic('Si pagas después de la fecha de vencimiento de la factura, el pago se verá reflejado al siguiente mes. Consulta tu día de pago: https://www.phenlinea.info/');
+                await flowDynamic('Puedes solicitar tu soporte de pago Aqui: https://forms.gle/VfjMwbUJBC9FZdob8');
                 break;
             case '5':
-                await flowDynamic('Soportes de meses anteriores: [link]');
+                await flowDynamic('Soportes de meses anteriores: https://forms.gle/XuKYRaR2ayHmeebw6');
                 break;
             case '6':
-                await flowDynamic('Revisión estados de cuenta: [link]');
+                await flowDynamic('Revisión estados de cuenta: https://forms.gle/bp4y3q85n54aWMu4A');
                 break;
             case '7':
-                await flowDynamic('Enviar soporte de pago: [link]');
+                await flowDynamic('Enviar soporte de pago: [link]'); //TODO: Se puede cambiar por otra
                 break;
             case '8':
-                await flowDynamic('Medios de Pago de administración: [link]');
+                await flowDynamic(`MEDIOS DE PAGO CUOTAS DE ADMINISTRACIÓN\n1.	Link para realizar pago por PSE, recuerda que al ingresar en el buscador debes poner “Unidad Residencial Majagua”\nhttps://www.avalpaycenter.com/wps/portal/portal-de-pagos\n\n2.	Directamente en oficina bancario BANCO AV VILLAS cuenta corriente\n512171356 referencia número del apartamento.\n
+                \n3.	Convenio Efecty 10691 referencia número del apartamento`);
                 break;
             case '9':
+                await flowDynamic(`*MEDIOS DE PAGO OTROS SERVICIOS*\n
+MEDIOS DE PAGO PARA CHIP VEHICULAR\n
+* Link para realizar pago por PSE, recuerda que al ingresar en el buscador debes poner “Unidad Residencial Majagua” EN LA CASILLA APARTAMENTO INGRESAR EL CODIGO 002
+https://www.avalpaycenter.com/wps/portal/portal-de-pagos\n\n
+* Directamente en oficina bancario BANCO AV VILLAS cuenta corriente\n
+512171356 referencia CODIGO 002\n\n
+* Convenio Efecty 10691 referencia CODIGO 002\n\n
+*MEDIOS DE PAGO PARA SALON SOCIAL*\n
+* Link para realizar pago por PSE, recuerda que al ingresar en el buscador debes poner “Unidad Residencial Majagua” EN LA CASILLA APARTAMENTO INGRESAR EL CODIGO 001
+https://www.avalpaycenter.com/wps/portal/portal-de-pagos\n\n
+* Directamente en oficina bancario BANCO AV VILLAS cuenta corriente\n
+512171356 referencia CODIGO 001\n\n
+* Convenio Efecty 10691 referencia CODIGO 001
+`);
+                break;
+            case '15':
                 return gotoFlow(flowWelcome); // Redirige al flujo de reinicio
             case '0':
                 await flowDynamic('Gracias por usar nuestro servicio. ¡Hasta luego!');
