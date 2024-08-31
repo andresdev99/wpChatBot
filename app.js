@@ -94,7 +94,7 @@ const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
                 await flowDynamic('Envía tus soportes de meses anteriores aquí: https://forms.gle/XuKYRaR2ayHmeebw6');
                 break;
             case '7':
-                await flowDynamic('El plazo maxímo para pagar es el *último día el mes hábil.*'); 
+                await flowDynamic('El plazo maxímo para pagar es el *último día del mes hábil.*'); 
                 break;
             case '8':
                 await flowDynamic(
