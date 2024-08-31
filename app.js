@@ -195,7 +195,7 @@ Sábados y domingo (si el lunes es festivo)
                 await flowDynamic('Reporte de novedades locativas: https://docs.google.com/forms/d/e/1FAIpQLSdbJOKik7IISldFaOjUfWFHWRkI8-VtZOh5oFSHvo1iWKVuFQ/viewform');
                 break;
             case '19':
-                await flowDynamic('Te puedes contactar al número: 3023954343.');
+                await flowDynamic('Te puedes contactar al número: 302 395 4343.');
                 break;
             case '20':
                 return gotoFlow(flowWelcome); // Redirige al flujo de reinicio
