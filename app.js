@@ -94,7 +94,7 @@ const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
                 await flowDynamic('Envía tus soportes de meses anteriores aquí: https://forms.gle/XuKYRaR2ayHmeebw6');
                 break;
             case '7':
-                await flowDynamic('El plazo maxímo para pagar es el *último día el més.*'); 
+                await flowDynamic('El plazo maxímo para pagar es el *último día el mes hábil.*'); 
                 break;
             case '8':
                 await flowDynamic(
@@ -195,7 +195,7 @@ Sábados y domingo (si el lunes es festivo)
                 await flowDynamic('Reporte de novedades locativas: https://docs.google.com/forms/d/e/1FAIpQLSdbJOKik7IISldFaOjUfWFHWRkI8-VtZOh5oFSHvo1iWKVuFQ/viewform');
                 break;
             case '19':
-                await flowDynamic('Te puedes contactar al número: 3023954343.');
+                await flowDynamic('Te puedes contactar al número: 302 395 4343.');
                 break;
             case '20':
                 return gotoFlow(flowWelcome); // Redirige al flujo de reinicio
