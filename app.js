@@ -133,7 +133,7 @@ Martes, jueves y sábado: 5:00am a 9:40am y 10:40am a 10:00pm
 *HORARIOS DE LA PISCINA* 🏊
 Martes, jueves, sábado, domingo y lunes (si es festivo): 10:00am a 5:00pm
 Miércoles y viernes: 1:00pm a 8:00pm
-**NOTA:** Los días lunes se realiza la limpieza profunda de la piscina, si el lunes es festivo, esta limpieza se realiza los días martes.`
+*NOTA:* Los días lunes se realiza la limpieza profunda de la piscina, si el lunes es festivo, esta limpieza se realiza los días martes.`
                 );
                 break;
             case '12':
