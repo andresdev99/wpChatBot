@@ -22,7 +22,7 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
         }
     });
 
-const flowRestartFinish = addKeyword(['0', '0.', '9', '9.'])
+const flowRestartFinish = addKeyword(['0', '0.', '9', '9.'], { sensitive: true })
     .addAnswer('¿Necesitas ayuda con algo más? 🤔 Escribe "9" para volver al menú principal o "0" para terminar.', { capture: true }, async (ctx, { endFlow, gotoFlow, flowDynamic, fallBack }) => {
         const option = ctx.body.trim();
 
@@ -39,7 +39,7 @@ const flowRestartFinish = addKeyword(['0', '0.', '9', '9.'])
         }
     });
 
-const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'])
+const flowMajagua = addKeyword(['1', '1.', 'MAJAGUA'], { sensitive: true })
     .addAnswer('¡Bienvenido a la sección de MAJAGUA! 🏡')
     .addAnswer('¿Qué te gustaría hacer hoy? 🤔')
     .addAnswer([
