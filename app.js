@@ -147,10 +147,10 @@ Miércoles y viernes: 1:00pm a 8:00pm
                 );
                 break;
             case '13':
-                await flowDynamic('Consulta el RPH-Manual de Convivencia aquí: https://drive.google.com/drive/folders/1-ACT6WQ7fSWBmSjnrp1Ri6mNu4Yv9cWW 📘');
+                await flowDynamic('Consulta el RPH-Manual de Convivencia aquí: https://drive.google.com/file/d/1K1X70HTgeKr14ab4HctBuBKnLfCaddhq/view?usp=sharing 📘');
                 break;
             case '14':
-                await flowDynamic('Diligencia el censo poblacional aquí: https://drive.google.com/drive/folders/1ckvVak9NuU83vK_-RWfHRYzPKD-C7XpM 📝');
+                await flowDynamic('Diligencia el censo poblacional aquí: https://docs.google.com/document/d/17Mnrc8bSW7Z8s2t12nv7ypajcBioabzn/edit 📝');
                 break;
             case '15':
                 await flowDynamic('Radica tu derecho de petición aquí: https://docs.google.com/forms/d/e/1FAIpQLScTluPMs-yhv5HRfWmCOzm2qVC7PTqRmw2mupFEuDxZkPBjDw/viewform 📄');
