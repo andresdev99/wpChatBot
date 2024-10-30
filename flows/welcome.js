@@ -5,6 +5,7 @@ const flowMosaico = require('./mosaico');
 const flowOporto = require('./oporto');
 const flowAltobelo = require('./altobelo');
 const flowAmatista = require('./amatista');
+const flowLisboa = require('./lisboa');
 
 const flowWelcome = addKeyword(EVENTS.WELCOME)
     .addAction(async (ctx, { gotoFlow }) => {
@@ -18,6 +19,7 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
         '*3.* OPORTO 🏠',
         '*4.* ALTOBELO 🏠',
         '*5.* AMATISTA 🏠',
+        '*6.* LISBOA 🏠',
     ], { capture: true }, async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
         const option = ctx.body.trim();
         if (option === '1' || option === 'MAJAGUA') {
@@ -30,7 +32,10 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
             return gotoFlow(flowAltobelo);
         } else if (option === '5' || option === 'AMATISTA') {
             return gotoFlow(flowAmatista);
-        } else {
+        } else if (option === '6' || option === 'LISBOA') {
+            return gotoFlow(flowLisboa);
+        }
+        else {
             await flowDynamic('❌ Opción no válida. Por favor, elige una opción válida.');
             return fallBack();
         }

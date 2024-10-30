@@ -14,6 +14,7 @@ const flowMosaico = require('./flows/mosaico');
 const flowOporto = require('./flows/oporto');
 const flowAltobelo = require('./flows/altobelo');
 const flowAmatista = require('./flows/amatista');
+const flowLisboa = require('./flows/lisboa');
 const { idleFlow } = require('./flows/idle-custom');
 
 const flows = [
@@ -23,6 +24,7 @@ const flows = [
     flowOporto,
     flowAltobelo,
     flowAmatista,
+    flowLisboa,
     flowRestartFinish,
     idleFlow
 ]
