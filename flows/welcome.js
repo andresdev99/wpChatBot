@@ -21,6 +21,7 @@ const flowWelcome = addKeyword(EVENTS.WELCOME)
         '*4.* ALTOBELO 🏠',
         '*5.* AMATISTA 🏠',
         '*6.* LISBOA 🏠',
+        '*7.* NUEVO MILENIO 🏠',
     ], { capture: true }, async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
         const option = ctx.body.trim();
         if (option === '1' || option === 'MAJAGUA') {
