@@ -6,7 +6,7 @@ const flowOceana = addKeyword(['NUEVOMILENIO'], { sensitive: true })
     .addAction(async (ctx, { gotoFlow }) => {
         reset(ctx, gotoFlow, 600000);
     })
-    .addAnswer('¡Bienvenido a la sección de Nuevo Milenio! 🏡')
+    .addAnswer('¡Bienvenido a la sección de Oceana! 🏡')
     .addAnswer('¿Qué te gustaría hacer hoy? 🤔')
     .addAnswer([
         '*Estados de Cuenta:* 📑',
