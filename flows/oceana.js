@@ -2,7 +2,7 @@ const { addKeyword } = require('@bot-whatsapp/bot');
 const { reset, stop } = require('./idle-custom');
 const flowRestartFinish = require('./restart');
 
-const flowNuevoMilenio = addKeyword(['NUEVOMILENIO'], { sensitive: true })
+const flowOceana = addKeyword(['NUEVOMILENIO'], { sensitive: true })
     .addAction(async (ctx, { gotoFlow }) => {
         reset(ctx, gotoFlow, 600000);
     })
@@ -394,8 +394,8 @@ Para asistencia, puedes comunicarte con nuestra asistente administrativa:
                 await flowDynamic('❌ Opción no válida. Por favor, elige una opción válida.');
                 return fallBack(); //Vuelve a presentar las opciones
         }
-        lastFlow = flowNuevoMilenio;
+        lastFlow = flowOceana;
         return gotoFlow(flowRestartFinish);
     })
 
-module.exports = flowNuevoMilenio;
+module.exports = flowOceana;
