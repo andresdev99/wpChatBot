@@ -28,22 +28,21 @@ const flowNuevoMilenio = addKeyword(['NUEVOMILENIO'], { sensitive: true })
         '\n*Información General:* ℹ️',
         '*10.* Paz y salvo.',//ok
         '*11.* Información de mudanza.',//ok
-        '*12.* Información Autorización de reformas en bienes privados.',
-        '*13.* Horarios de atención administrativa.',//ok
-        '*14.* Horarios de zonas comunes.',//ok
-        '*15.* Enviar Reglamento de Propiedad Horizontal.',//ok
-        '*16.* Enviar Manual de Convivencia.',//ok
-        '*17.* Diligenciamiento censo poblacional.',//ok
-        '*18.* Radicar derechos de petición.',//ok
-        '*19.* Información SALÓN SOCIAL.',//ok
-        '*20.* PQRSF.',//ok
-        '*21.* Reportar novedades locativas.',//ok
-        '*22.* Contactar con un asesor.',//ok
-        '*23.* Contacto porteria.',//ok
-        '*24.* Número para solicitar retiro de escombros.',//ok
+        '*12.* Horarios de atención administrativa.',//ok
+        '*13.* Horarios de zonas comunes.',//ok
+        '*14.* Enviar Reglamento de Propiedad Horizontal.',//ok
+        '*15.* Enviar Manual de Convivencia.',//ok
+        '*16.* Diligenciamiento censo poblacional.',//ok
+        '*17.* Radicar derechos de petición.',//ok
+        '*18.* Información SALÓN SOCIAL.',//ok
+        '*19.* PQRSF.',//ok
+        '*20.* Reportar novedades locativas.',//ok
+        '*21.* Contactar con un asesor.',//ok
+        '*22.* Contacto porteria.',//ok
+        '*23.* Número para solicitar retiro de escombros.',//ok
 
         '\n*Opciones de Navegación:* 🧭',
-        '*25.* Volver al menú principal.',
+        '*24.* Volver al menú principal.',
         '*0.* Terminar la conversación.'
     ], { capture: true }, async (ctx, { flowDynamic, fallBack, endFlow, gotoFlow }) => {
         reset(ctx, gotoFlow, 600000);
@@ -146,15 +145,6 @@ A continuación, se presenta el protocolo de mudanzas a seguir a partir de la fe
                 break;
             case '12':
                 await flowDynamic(
-                    `🏠 Información sobre Reformas y/o Adecuaciones en los Apartamentos
-
-Consulta toda la información necesaria sobre reformas y adecuaciones en el siguiente enlace:
-https://drive.google.com/file/d/1gWSlH0qT3MXEjUIvsaMtBMXeuDuZQUFc/view?usp=drive_link 📋
-
-Asegúrate de revisar los detalles para cumplir con los requisitos y protocolos establecidos. ¡Gracias por tu colaboración! ✅`);
-                break;
-            case '13':
-                await flowDynamic(
                     `*HORARIO ADMINISTRACIÓN* 🏢
 
 - *Lunes a Viernes:*
@@ -164,7 +154,7 @@ Asegúrate de revisar los detalles para cumplir con los requisitos y protocolos 
 - *Sábado* (cada 15 días) 🗓️
   8:00 am a 12:00 pm`);
                 break;
-            case '14':
+            case '13':
                 await flowDynamic(
                     `*HORARIO DE ÁREAS COMUNES*
 
@@ -200,19 +190,19 @@ Asegúrate de revisar los detalles para cumplir con los requisitos y protocolos 
 - *Sábado:* 9:00 am a 5:30 pm
 - *Domingos y festivos:* 9:00 am a 4:30 pm`);
                 break;
-            case '15':
+            case '14':
                 await flowDynamic('Consulta el Reglamento de Propiedad Horizontal aquí: https://drive.google.com/file/d/1bakrjhs1sBauAcn3yDKcD34y7F2iWH50/view?usp=sharing  📘');
                 break;
-            case '16':
+            case '15':
                 await flowDynamic('Consulta el Manual de Convivencia aquí: https://drive.google.com/file/d/1KacO1jQL3DdJI0ACgYrzzcOmVwIvR-JA/view?usp=sharing 📘')
                 break;
-            case '17':
+            case '16':
                 await flowDynamic('Diligencia el censo poblacional aquí: https://forms.gle/SFNoU432QZyaLHir9 📝');
                 break;
-            case '18':
+            case '17':
                 await flowDynamic(`📧 Por favor enviar el derecho de petición al siguiente correo nuevomilenioph@gmail.com`);
                 break;
-            case '19':
+            case '18':
                 await flowDynamic(
                     `*PROTOCOLO Y REGLAMENTO PARA EL USO DEL SALÓN SOCIAL* 🏢
 
@@ -257,29 +247,29 @@ Asegúrate de revisar los detalles para cumplir con los requisitos y protocolos 
 - *Decoración:*
   - Evita reventar globos como parte de la decoración; esto afecta el descanso de los residentes. Usa tijeras para desinflar y retirar los globos de manera silenciosa.`);
                 break;
-            case '20':
+            case '19':
                 await flowDynamic(`*PQRSF FORMULARIO* 📝
 https://forms.gle/boXWnjekd6z7ZKUV8`);
                 break;
-            case '21':
+            case '20':
                 await flowDynamic(`*Reporte de Novedades (Locativas) FORMATO* 🛠️
 https://forms.gle/KufCvrShz2y2hD5w8`);
                 break;
-            case '22':
+            case '21':
                 await flowDynamic(`*Comunicación con un Asesor* 📞
 *Asistente Administrativa:* Angela Serna
 📱 3014448877`);
                 break;
-            case '23':
+            case '22':
                 await flowDynamic(`*Número de Portería* 🛡️
 📱 3237855619`);
                 break;
-            case '24':
+            case '23':
                 await flowDynamic(`*Número para Solicitar Retiro de Escombros* 🗑️
 *INTERASEO (Madera, escombros, muebles, electrodomésticos):*
 📱 3012655557`);
                 break;
-            case '25':
+            case '24':
                 return gotoFlow(require('./welcome')); //Redirige al flujo de reinicio
             case '0':
                 stop(ctx);
