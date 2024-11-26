@@ -14,6 +14,7 @@ const flowAmatista = require('./flows/amatista');
 const flowLisboa = require('./flows/lisboa');
 const flowNuevoMilenio = require('./flows/nuevoMilenio');
 const flowOceana = require('./flows/oceana');
+const flowParaiso = require('./flows/paraiso');
 const { idleFlow } = require('./flows/idle-custom');
 
 const {TOKEN, NUMBER_ID, VERIFY_TOKEN } = process.env
@@ -28,6 +29,7 @@ const flows = [
     flowLisboa,
     flowNuevoMilenio,
     flowOceana,
+    flowParaiso,
     flowRestartFinish,
     idleFlow
 ]

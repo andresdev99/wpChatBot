@@ -25,25 +25,25 @@ const flowAmatista = addKeyword(['AMATISTA'], { sensitive: true })
 
 
         '\nℹ️ *Información sobre ENDOSOS*',
-        '*10.* Solicitar el endoso del seguro para su crédito hipotecario.', //ok
-        '*11.* Póliza de seguro LISBOA PH.', //ok
-        '*12.* Instructivo para solicitar el seguro.', //ok
+        '*10.* Solicitar el endoso del seguro para su crédito hipotecario.',
+        '*11.* Póliza de seguro LISBOA PH.',
+        '*12.* Instructivo para solicitar el seguro.',
 
         '\n*Información General:* ℹ️',
-        '*13.* Paz y salvo.', //ok
-        '*14.* Información de mudanza.', //ok
-        '*15.* Información Autorización de reformas en bienes privados.', //ok
-        '*16.* Horarios de atención administrativa.', //ok
-        '*17.* Horarios de zonas comunes.', //ok
-        '*18.* Enviar Reglamento de Propiedad Horizontal.', //ok
-        '*19.* Enviar Manual de Convivencia.', //ok
-        '*20.* Diligenciamiento censo poblacional.', //ok
-        '*21.* Radicar derechos de petición.', //ok
-        '*22.* Reservar salón social.', //ok
-        '*23.* PQRSF.', //ok
-        '*24.* Reportar novedades locativas.', //ok
-        '*25.* Contactar con un asesor.', //ok
-        '*26.* Contacto porteria.', //ok
+        '*13.* Paz y salvo.',
+        '*14.* Información de mudanza.',
+        '*15.* Información Autorización de reformas en bienes privados.',
+        '*16.* Horarios de atención administrativa.',
+        '*17.* Horarios de zonas comunes.',
+        '*18.* Enviar Reglamento de Propiedad Horizontal.',
+        '*19.* Enviar Manual de Convivencia.',
+        '*20.* Diligenciamiento censo poblacional.',
+        '*21.* Radicar derechos de petición.',
+        '*22.* Reservar salón social.',
+        '*23.* PQRSF.',
+        '*24.* Reportar novedades locativas.',
+        '*25.* Contactar con un asesor.',
+        '*26.* Contacto porteria.',
 
         '\n*Opciones de Navegación:* 🧭',
         '*27.* Volver al menú principal.',

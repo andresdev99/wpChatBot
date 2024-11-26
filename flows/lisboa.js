@@ -25,27 +25,27 @@ const flowLisboa = addKeyword(['LISBOA'], { sensitive: true })
 
 
         '\nℹ️ *Información sobre ENDOSOS*',
-        '*10.* Solicitar el endoso del seguro para su crédito hipotecario.', //ok
-        '*11.* Póliza de seguro LISBOA PH.', //ok
-        '*12.* Instructivo para solicitar el seguro.', //ok
-        '*13.* Paz y salvo del seguro.', //ok
+        '*10.* Solicitar el endoso del seguro para su crédito hipotecario.',
+        '*11.* Póliza de seguro LISBOA PH.',
+        '*12.* Instructivo para solicitar el seguro.',
+        '*13.* Paz y salvo del seguro.',
 
         '\n*Información General:* ℹ️',
-        '*14.* Paz y salvo.', //ok
-        '*15.* Información de mudanza.', //ok
-        '*16.* Información Autorización de reformas en bienes privados.', //ok
-        '*17.* Horarios de atención administrativa.', //ok
-        '*18.* Horarios de zonas comunes.', //ok
-        '*19.* Enviar Reglamento de Propiedad Horizontal.', //ok
-        '*20.* Enviar Manual de Convivencia.', //ok
-        '*21.* Diligenciamiento censo poblacional.', //ok
-        '*22.* Radicar derechos de petición.', //ok
-        '*23.* Reservar salón social.', //ok
-        '*24.* PQRSF.', //ok
-        '*25.* Reportar novedades locativas.', //ok
-        '*26.* Contactar con un asesor.', //ok
-        '*27.* Contacto porteria.', //ok
-        '*28.* Contacto Consejo de Administración.', //ok
+        '*14.* Paz y salvo.',
+        '*15.* Información de mudanza.',
+        '*16.* Información Autorización de reformas en bienes privados.',
+        '*17.* Horarios de atención administrativa.',
+        '*18.* Horarios de zonas comunes.',
+        '*19.* Enviar Reglamento de Propiedad Horizontal.',
+        '*20.* Enviar Manual de Convivencia.',
+        '*21.* Diligenciamiento censo poblacional.',
+        '*22.* Radicar derechos de petición.',
+        '*23.* Reservar salón social.',
+        '*24.* PQRSF.',
+        '*25.* Reportar novedades locativas.',
+        '*26.* Contactar con un asesor.',
+        '*27.* Contacto porteria.',
+        '*28.* Contacto Consejo de Administración.',
 
         '\n*Opciones de Navegación:* 🧭',
         '*29.* Volver al menú principal.',

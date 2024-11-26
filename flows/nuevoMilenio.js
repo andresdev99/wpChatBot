@@ -10,39 +10,40 @@ const flowNuevoMilenio = addKeyword(['NUEVOMILENIO'], { sensitive: true })
     .addAnswer('¿Qué te gustaría hacer hoy? 🤔')
     .addAnswer([
         '*Estados de Cuenta:* 📑',
-        '*1.* Consulta de estados de cuenta.',//OK
+        '*1.* Consulta de estados de cuenta.',
 
         '\n*Facturación y Pagos:* 💳',
-        '*2.* Reportar novedad de facturación.',//ok
-        '*3.* Solicitud de factura.',//OK
-        '*4.* Día de pago.',//OK
-        '*5.* Enviar soporte de pago',//ok
-        '*6.* Revisión estados de cuenta.',//OK
-        '*7.* Medios de pago administración.', //ok
-        '*8.* Medios de pago otros servicios.',//ok
+        '*2.* Reportar novedad de facturación.',
+        '*3.* Solicitud de factura.',
+        '*4.* Día de pago.',
+        '*5.* Enviar soporte de pago',
+        '*6.* Revisión estados de cuenta.',
+        '*7.* Medios de pago administración.',
+        '*8.* Medios de pago otros servicios.',
 
 
         '\nℹ️ *Información sobre ENDOSOS*',
-        '*9.* Solicitar el endoso del seguro para su crédito hipotecario.',//ok
+        '*9.* Solicitar el endoso del seguro para su crédito hipotecario.',
 
         '\n*Información General:* ℹ️',
-        '*10.* Paz y salvo.',//ok
-        '*11.* Información de mudanza.',//ok
-        '*12.* Horarios de atención administrativa.',//ok
-        '*13.* Horarios de zonas comunes.',//ok
-        '*14.* Enviar Reglamento de Propiedad Horizontal.',//ok
-        '*15.* Enviar Manual de Convivencia.',//ok
-        '*16.* Diligenciamiento censo poblacional.',//ok
-        '*17.* Radicar derechos de petición.',//ok
-        '*18.* Información SALÓN SOCIAL.',//ok
-        '*19.* PQRSF.',//ok
-        '*20.* Reportar novedades locativas.',//ok
-        '*21.* Contactar con un asesor.',//ok
-        '*22.* Contacto porteria.',//ok
-        '*23.* Número para solicitar retiro de escombros.',//ok
+        '*10.* Paz y salvo.',
+        '*11.* Información de mudanza.',
+        '*12.* Horarios de atención administrativa.',
+        '*13.* Horarios de zonas comunes.',
+        '*14.* Enviar Reglamento de Propiedad Horizontal.',
+        '*15.* Enviar Manual de Convivencia.',
+        '*16.* Diligenciamiento censo poblacional.',
+        '*17.* Radicar derechos de petición.',
+        '*18.* Información SALÓN SOCIAL.',
+        '*19.* PQRSF.',
+        '*20.* Reportar novedades locativas.',
+        '*21.* Información sobre los IMPUESTOS PREDIALES.',//aca
+        '*22.* Contactar con un asesor.',
+        '*23.* Contacto porteria.',
+        '*24.* Número para solicitar retiro de escombros.',
 
         '\n*Opciones de Navegación:* 🧭',
-        '*24.* Volver al menú principal.',
+        '*25.* Volver al menú principal.',
         '*0.* Terminar la conversación.'
     ], { capture: true }, async (ctx, { flowDynamic, fallBack, endFlow, gotoFlow }) => {
         reset(ctx, gotoFlow, 600000);
@@ -62,7 +63,8 @@ Si deseas obtener más información o aprender cómo realizar el proceso, haz cl
 Si deseas obtener más información o aprender cómo realizar el proceso, haz clic aquí para ver el video explicativo: https://1drv.ms/v/s!ApxrvRa6pSarhMtiSoKIZPaN7rAuIw?e=mcCioe`);
                 break;
             case '4':
-                await flowDynamic(`⏳ Si paga después de la fecha de vencimiento de la factura, el pago se verá reflejado al siguiente mes.`);
+                await flowDynamic(`⏳ Si paga después de la fecha de vencimiento de la factura, el pago se verá reflejado al siguiente mes.
+                    El último día hábil del mes a más tardar las 5:00 de la tarde, deberá ser efectuado el pago.`);
                     break;
             case '5':
                 await flowDynamic(
@@ -256,20 +258,23 @@ https://forms.gle/boXWnjekd6z7ZKUV8`);
 https://forms.gle/KufCvrShz2y2hD5w8`);
                 break;
             case '21':
+                await flowDynamic(`Señor Propietario, puede comunicarse a la portería al número 3237855619`);
+                break;
+            case '22':
                 await flowDynamic(`*Comunicación con un Asesor* 📞
 *Asistente Administrativa:* Angela Serna
 📱 3014448877`);
                 break;
-            case '22':
+            case '23':
                 await flowDynamic(`*Número de Portería* 🛡️
 📱 3237855619`);
                 break;
-            case '23':
+            case '24':
                 await flowDynamic(`*Número para Solicitar Retiro de Escombros* 🗑️
 *INTERASEO (Madera, escombros, muebles, electrodomésticos):*
 📱 3012655557`);
                 break;
-            case '24':
+            case '25':
                 return gotoFlow(require('./welcome')); //Redirige al flujo de reinicio
             case '0':
                 stop(ctx);

@@ -10,40 +10,40 @@ const flowOceana = addKeyword(['NUEVOMILENIO'], { sensitive: true })
     .addAnswer('¿Qué te gustaría hacer hoy? 🤔')
     .addAnswer([
         '*Estados de Cuenta:* 📑',
-        '*1.* Consulta de estados de cuenta.',//ok
+        '*1.* Consulta de estados de cuenta.',
 
         '\n*Facturación y Pagos:* 💳',
-        '*2.* Reportar novedad de facturación.',//ok
-        '*3.* Solicitud de factura.',//ok
-        '*4.* Día de pago.',//ok
-        '*5.* Enviar soporte de pago',//ok
-        '*6.* Revisión estados de cuenta.',//ok
-        '*7.* Medios de pago administración.',//ok
-        '*8.* Medios de pago otros servicios.',//ok
+        '*2.* Reportar novedad de facturación.',
+        '*3.* Solicitud de factura.',
+        '*4.* Día de pago.',
+        '*5.* Enviar soporte de pago',
+        '*6.* Revisión estados de cuenta.',
+        '*7.* Medios de pago administración.',
+        '*8.* Medios de pago otros servicios.',
 
 
         '\nℹ️ *Información sobre ENDOSOS*',
-        '*9.* Solicitar el endoso del seguro para su crédito hipotecario.',//ok
+        '*9.* Solicitar el endoso del seguro para su crédito hipotecario.',
 
         '\n*Información General:* ℹ️',
-        '*10.* Paz y salvo.',//ok
-        '*11.* Información de mudanza.',//ok
+        '*10.* Paz y salvo.',
+        '*11.* Información de mudanza.',
         '*12.* Información teatro',
         '*13.* Información billar',
         '*14.* Información BBQ',
         '*15.* Información salón de videojuegos',
-        '*16.* Horarios de atención administrativa.',//ok
-        '*17.* Horarios de zonas comunes.',//ok
-        '*18.* Enviar Reglamento de Propiedad Horizontal.',//ok
-        '*19.* Enviar Manual de Convivencia.',//ok
-        '*20.* Diligenciamiento censo poblacional.',//ok
-        '*21.* Radicar derechos de petición.',//ok
-        '*22.* Información SALÓN SOCIAL.',//ok
-        '*23.* PQRSF.',//ok
-        '*24.* Reportar novedades locativas.',//ok
-        '*25.* Contactar con un asesor.',//ok
-        '*26.* Contacto porteria.',//ok
-        '*27.* Número para solicitar retiro de escombros.',//ok
+        '*16.* Horarios de atención administrativa.',
+        '*17.* Horarios de zonas comunes.',
+        '*18.* Enviar Reglamento de Propiedad Horizontal.',
+        '*19.* Enviar Manual de Convivencia.',
+        '*20.* Diligenciamiento censo poblacional.',
+        '*21.* Radicar derechos de petición.',
+        '*22.* Información SALÓN SOCIAL.',
+        '*23.* PQRSF.',
+        '*24.* Reportar novedades locativas.',
+        '*25.* Contactar con un asesor.',
+        '*26.* Contacto porteria.',
+        '*27.* Número para solicitar retiro de escombros.',
 
         '\n*Opciones de Navegación:* 🧭',
         '*28.* Volver al menú principal.',
