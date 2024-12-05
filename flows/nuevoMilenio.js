@@ -171,8 +171,8 @@ Asegúrate de revisar los detalles para cumplir con los requisitos y protocolos 
 **GIMNASIO** 🏋️‍♂️
 - **Lunes:** Mantenimiento 🔧
 - **Martes a viernes:** 6:00 am a 8:30 pm
-- **Sábado:** 9:00 am a 5:30 pm
-- **Domingos y festivos:** 9:00 am a 4:30 pm
+- **Sábado:** 6:00 am a 5:30 pm
+- **Domingos y festivos:** 6:00 am a 4:30 pm
 
 **PISCINAS Y JACUZZI** 🏊‍♂️💦
 - **Lunes:** Mantenimiento 🔧

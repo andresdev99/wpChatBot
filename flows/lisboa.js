@@ -226,7 +226,7 @@ Lunes a Domingo (Incluye festivos): 🕗 8:00 AM a 10:00 PM`);
                 await flowDynamic(
                     `🏢 RESERVA Y COSTO DEL SALÓN SOCIAL
 
-• Reserva el salón social en el siguiente enlace: Formulario de Reserva 📋
+• Reserva el salón social en el siguiente enlace: https://form.jotform.com/urbanizacionlisboaph/reservasalonsocial 📋
 • Costo de alquiler: $120,000 COP, a consignar en la cuenta de la copropiedad al menos una semana antes del evento.
 • Depósito de seguridad: El día del evento, se debe entregar un depósito de $200,000 COP en efectivo en portería, en caso de cualquier novedad.
 • Equipamiento del salón: 45 sillas, 3 mesas rectangulares, 3 mesas cuadradas, cocineta, nevera y dotación de baños. 🪑🍽️
@@ -234,11 +234,13 @@ Lunes a Domingo (Incluye festivos): 🕗 8:00 AM a 10:00 PM`);
 
 ENTREGA DEL SALÓN SOCIAL
 • Disponibilidad el día del evento: A partir de las 🕘 9:00 AM
-• Horario de cierre:
 
+• Horario de cierre:
 Domingo a Viernes: Hasta las 🕙 10:00 PM
 Sábado: Hasta las 🕛 11:59 PM
+
 Nota: Los domingos, el horario se extiende hasta las 11:59 PM cuando el lunes es festivo.
+
 Condiciones:
 • El apartamento solicitante debe estar al día en las cuotas de administración para hacer uso del salón social. ✅
 • El salón se entrega limpio y debe devolverse en las mismas condiciones. 🧹`);

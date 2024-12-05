@@ -192,22 +192,22 @@ https://docs.google.com/document/d/1dl0yeWULxQ_lMBUOonDQP3R2bEsnLaL6/edit?usp=dr
             case '22':
                 await flowDynamic(
                     `🎉 RESERVA Y COSTO DEL SALÓN SOCIAL
-* 🔗 https://form.jotform.com/241896093748068
-* El salón social tiene un valor de 150.000 pesos que se deben consignar a la cuenta de la copropiedad una semana antes del evento.
-* El día del evento se debe dar un depósito de 150.000 en efectivo en portería por si ocurre alguna novedad.
-* El salón cuenta con 45 sillas, 3 mesas rectangulares, 3 mesas cuadradas, cocineta, nevera y dotación de baños.
-* La reserva se debe realizar por JOTFORM.
-* Enviar el soporte de pago del salón social al correo electrónico.
 
-📅 ENTREGA
-* Se entrega el mismo día del evento a partir de las 9:00 am.
-📆 Domingo a Viernes hasta las 10:00 pm
-📆 Sábado hasta las 11:59 pm
+📋* Pasos para Reservar*
+* Realiza tu reserva a través de este enlace 👉 https://form.jotform.com/241896093748068
+* Realiza el pago de *150.000 pesos* por el uso del salón social una semana antes del evento. El valor debe ser consignado a la cuenta de la copropiedad.
+* Envía el soporte de pago al correo electrónico correspondiente 📧.
+* *El día del evento*, deposita *150.000 pesos en efectivo* en portería como garantía por si ocurre alguna novedad.
 
-🔔 NOTA: El horario del domingo irá hasta las 11:59 pm cuando el día siguiente sea festivo.
+📅 *Entrega del Salón*
+* *Domingo a Viernes*: El salón se entrega el día del evento a partir de las *9:00 am* y debe desocuparse antes de las 10:00 pm.
+* *Sábados*: El horario se extiende hasta las *11:59 pm*.
+* *Excepción*: Los domingos que preceden un día festivo tendrán horario extendido hasta las *11:59 pm* también. 🎉
 
-* Para hacer uso del salón social, el apto que reside debe estar al día en las cuotas de administración.
-* El salón se entrega limpio y así se debe entregar nuevamente.`);
+⚠️ *Condiciones Importantes*:
+
+🏠 *El apartamento debe estar al día en las cuotas de administración* para poder hacer uso del salón.
+🧹 *El salón se entrega limpio* y debe devolverse en las mismas condiciones.`);
                 break;
             case '23':
                 await flowDynamic(`📧 Por favor enviar un correo a admon.amatista1@gmail.com, con el número de apartamento, la situación presentada en la copropiedad y la evidencia de dicho suceso.`);
